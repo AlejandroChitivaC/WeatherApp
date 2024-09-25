@@ -4,7 +4,7 @@ import { useAuth } from "../context/AuthContext";
 const ProtectedRoute = ({ children }: { children: JSX.Element }) => {
   const { user } = useAuth();
 
-  if (!user) {
+  if (!user && !localStorage.getItem("user")) {
     return <Navigate to="/login" />;
   }
 
