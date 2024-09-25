@@ -19,7 +19,6 @@ const Login: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-blue-300 via-blue-400 to-blue-500 p-4 relative overflow-hidden">
-      {/* Cloud-like background */}
       <div
         className="absolute inset-0 z-0"
         style={{

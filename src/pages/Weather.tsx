@@ -185,7 +185,7 @@ const Weather = () => {
 
           {country && (
             <div
-              onClick={toggleCountryInfo} // Alterna el estado para mostrar u ocultar la info del país
+              onClick={toggleCountryInfo} 
               className="cursor-pointer bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition duration-300"
             >
               <h3 className="text-xl font-bold text-blue-700">

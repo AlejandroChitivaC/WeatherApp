@@ -48,7 +48,7 @@ const useWeather = (city: string) => {
         if (city) {
             const fetchWeather = async () => {
                 try {
-                    const data = await getWeatherByCity(city); // Usamos la función de la API
+                    const data = await getWeatherByCity(city);
                     setWeather(data);
                 } catch (err) {
                     setError('Ciudad no encontrada');

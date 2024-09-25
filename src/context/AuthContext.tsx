@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, ReactNode } from "react";
 import { CredentialResponse } from "@react-oauth/google";
-import { jwtDecode } from "jwt-decode"; // Asegúrate de tener la importación correcta
+import { jwtDecode } from "jwt-decode"; 
 import { Report } from "notiflix/build/notiflix-report-aio";
 
 // Define el tipo de datos que vamos a decodificar del JWT
@@ -24,7 +24,6 @@ interface AuthContextType {
   logout: () => void;
 }
 
-// Creamos el contexto de autenticación
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const useAuth = () => {

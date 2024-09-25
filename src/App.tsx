@@ -19,7 +19,6 @@ function App() {
           }
         />
 
-        {/* Redirecciona cualquier ruta no encontrada */}
         <Route path="*" element={<div>404 - Página no encontrada</div>} />
       </Routes>
     </Router>
