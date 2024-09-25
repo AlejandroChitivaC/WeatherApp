@@ -8,7 +8,6 @@ import {
 import { CredentialResponse } from "@react-oauth/google";
 import { jwtDecode } from "jwt-decode";
 import { Report } from "notiflix/build/notiflix-report-aio";
-import { useWeatherContext } from "./WeatherContext";
 
 interface DecodedJWT {
   name: string;
@@ -40,7 +39,7 @@ export const useAuth = () => {
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<User | null>(null);
-  const { resetCities } = useWeatherContext();
+
   useEffect(() => {
     const savedUser = localStorage.getItem("user");
     if (savedUser) {
@@ -72,7 +71,6 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       setUser(null);
       localStorage.removeItem("user");
       localStorage.removeItem("token");
-      resetCities();
     }, 800);
   };
 
