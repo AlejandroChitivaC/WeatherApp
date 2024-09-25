@@ -1,4 +1,3 @@
-// src/api/weatherApi.ts
 import axios from 'axios';
 
 const API_KEY = import.meta.env.VITE_OWEATHER_API_KEY;

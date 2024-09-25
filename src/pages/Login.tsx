@@ -2,7 +2,7 @@ import React from "react";
 import { GoogleLogin, CredentialResponse } from "@react-oauth/google";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
-import { Loading } from "notiflix/build/notiflix-loading-aio"; // Importar Notiflix
+import { Loading } from "notiflix/build/notiflix-loading-aio"; 
 
 const Login: React.FC = () => {
   const { login } = useAuth();

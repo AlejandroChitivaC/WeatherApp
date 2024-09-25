@@ -9,7 +9,7 @@ import { toPascalCase } from "../utils/utils";
 const Weather = () => {
   const [city, setCity] = useState("");
   const [searchHistory, setSearchHistory] = useState<string[]>([]);
-  const [showCountryInfo, setShowCountryInfo] = useState(false); // Estado para manejar el despliegue del país
+  const [showCountryInfo, setShowCountryInfo] = useState(false);
   const suggestedCities = ["Bogotá", "Miami", "New York"];
   const { weather } = useWeather(city);
   const countryCode = weather?.sys?.country;
@@ -53,7 +53,7 @@ const Weather = () => {
   };
 
   const toggleCountryInfo = () => {
-    setShowCountryInfo((prev) => !prev); // Alterna el estado de mostrar o no la información del país
+    setShowCountryInfo((prev) => !prev); 
   };
 
   return (

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getWeatherByCity } from '../api/weatherApi'; // Importamos la función API
+import { getWeatherByCity } from '../api/weatherApi';
 
 interface WeatherData {
     name: string;
