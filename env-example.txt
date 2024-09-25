@@ -1,0 +1,2 @@
+VITE_GOOGLE_CLIENT_ID=client-id-de-google
+VITE_OWEATHER_API_KEY=api-key-open-weather

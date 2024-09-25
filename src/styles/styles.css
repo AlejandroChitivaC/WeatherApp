@@ -1,0 +1,11 @@
+.centered {
+  @apply flex justify-center items-center;
+}
+
+.full-screen {
+  @apply h-screen bg-gray-100;
+}
+
+.card {
+  @apply bg-white p-8 rounded-xl shadow-xl max-w-lg w-full;
+}
