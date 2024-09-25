@@ -30,7 +30,7 @@ const useCountry = (countryCode: string) => {
           const response = await axios.get(
             `https://restcountries.com/v3.1/alpha/${countryCode}`
           );
-          setCountry(response.data[0]); // Acceder al primer país en la respuesta
+          setCountry(response.data[0]);
         } catch (err) {
           setError('País no encontrado');
           console.error(err);
