@@ -18,7 +18,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
         <Route path="*" element={<div>404 - Página no encontrada</div>} />
       </Routes>
     </Router>
