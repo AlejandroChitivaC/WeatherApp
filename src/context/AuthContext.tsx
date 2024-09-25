@@ -67,8 +67,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   const logout = () => {
     setTimeout(() => {
-      Report.success("Exito", "Sesión cerrada", "Ok");
       setUser(null);
+      Report.success("Exito", "Sesión cerrada", "Ok");
       localStorage.removeItem("user");
       localStorage.removeItem("token");
     }, 800);
