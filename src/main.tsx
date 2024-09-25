@@ -10,13 +10,13 @@ const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <GoogleOAuthProvider clientId={clientId}>
-      <AuthProvider>
-        <UserProvider>
-          <WeatherProvider>
+      <WeatherProvider>
+        <AuthProvider>
+          <UserProvider>
             <App />
-          </WeatherProvider>
-        </UserProvider>
-      </AuthProvider>
+          </UserProvider>
+        </AuthProvider>
+      </WeatherProvider>
     </GoogleOAuthProvider>
   </StrictMode>
 );
