@@ -3,7 +3,7 @@ import { createContext, useContext, useState, ReactNode } from "react";
 interface WeatherContextType {
   cities: string[];
   addCity: (city: string) => void;
-  resetCities: () => void; // Método para resetear el historial
+  resetCities: () => void;
 }
 
 const WeatherContext = createContext<WeatherContextType | undefined>(undefined);
