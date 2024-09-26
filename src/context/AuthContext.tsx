@@ -69,6 +69,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     setTimeout(() => {
       setUser(null);
       Report.success("Exito", "Sesión cerrada", "Ok");
+      localStorage.removeItem("weatherSearchHistory");
       localStorage.removeItem("user");
       localStorage.removeItem("token");
     }, 800);
