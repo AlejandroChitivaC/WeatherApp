@@ -28,7 +28,7 @@ export const WeatherProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const resetCities = () => {
-    setCities([]); 
+    setCities([]);
   };
 
   return (
